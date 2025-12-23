@@ -110,11 +110,30 @@
 }
 
 @media (max-width: 768px) {
+    .aboutWrapper {
+        padding: 1.5rem;
+    }
+
     .aboutTitle {
-        font-size: 3rem;
+        font-size: 2.5rem;
+    }
+
+    .aboutHeader {
+        margin-bottom: 2.5rem;
     }
 
     .aboutGrid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .aboutSection {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .aboutTitle {
+        font-size: 2rem;
     }
 }

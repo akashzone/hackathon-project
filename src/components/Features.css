@@ -371,21 +371,66 @@
 }
 
 @media (max-width: 992px) {
+    .featuresCategory {
+        padding: 0 1.5rem;
+    }
+
+    .sectionTitle {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
     .interactiveFeatureContainer {
         grid-template-columns: 1fr;
+        min-height: auto;
     }
 
     .featuresSidebar {
         flex-direction: row;
         overflow-x: auto;
         padding-bottom: 1rem;
+        scroll-snap-type: x mandatory;
+        -ms-overflow-style: none;
+        /* Hide scrollbar for IE/Edge */
+        scrollbar-width: none;
+        /* Hide scrollbar for Firefox */
+    }
+
+    .featuresSidebar::-webkit-scrollbar {
+        display: none;
+        /* Hide scrollbar for Chrome/Safari/Webkit */
     }
 
     .featureTitleBtn {
         white-space: nowrap;
+        padding: 0.8rem 1.25rem;
+        font-size: 0.95rem;
+        scroll-snap-align: start;
     }
 
     .featureTitleBtn.active {
-        transform: translateY(-5px);
+        transform: translateY(-4px) scale(1.02);
+    }
+
+    .featureDisplay {
+        padding: 2rem 1.5rem;
+    }
+
+    .displayContent h3 {
+        font-size: 1.5rem;
+    }
+
+    .displayContent p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .sectionTitle {
+        font-size: 1.75rem;
+    }
+
+    .featureDisplay {
+        padding: 1.5rem 1rem;
     }
 }
