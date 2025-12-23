@@ -1,0 +1,73 @@
+.hero {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    /* This makes the hero section fill the entire screen below the header */
+    height: calc(100vh - 70px);
+    width: 100%;
+}
+
+.hero h1 {
+    /* Big, bold typography for the welcome message */
+    font-size: 5rem;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    /* This creates a nice gradient from white to grey for the big text */
+    background: linear-gradient(180deg, #fff 0%, #a0a0a0 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1;
+}
+
+.builtBy {
+    /* A little shoutout to wait... who built this? Data debuggers! */
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #a0a0a0;
+    opacity: 0.8;
+}
+
+.heroTagline {
+    font-size: 1.25rem;
+    color: #a0a0a0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.heroCta {
+    background: #fff;
+    color: #000;
+    border: none;
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 99px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.heroCta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.4);
+    background: #f0f0f0;
+}
+
+@media (max-width: 992px) {
+    .hero h1 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+}

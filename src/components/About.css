@@ -1,0 +1,120 @@
+.aboutWrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.aboutHeader {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.aboutTitle {
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    background: linear-gradient(180deg, #fff 0%, #a0a0a0 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
+}
+
+.aboutSubtitle {
+    font-size: 1.25rem;
+    color: #888888;
+}
+
+.aboutSubtitle strong {
+    color: #ffffff;
+}
+
+.aboutGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.aboutSection {
+    background: #050505;
+    border: 1px solid #1a1a1a;
+    border-radius: 24px;
+    padding: 2.5rem;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.aboutSection:hover {
+    transform: translateY(-5px);
+    border-color: #333333;
+}
+
+.aboutSection.highlight {
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.05);
+}
+
+.aboutSection h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 1.25rem;
+}
+
+.aboutSection p {
+    color: #888888;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.sectionIcon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.aboutList {
+    list-style: none;
+    padding: 0;
+}
+
+.aboutList li {
+    color: #888888;
+    margin-bottom: 0.75rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.aboutList li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #ffffff;
+}
+
+.aboutList strong {
+    color: #ffffff;
+}
+
+.teamQuote {
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #ffffff !important;
+    border-left: 2px solid #ffffff;
+    padding-left: 1rem;
+}
+
+.teamSection {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .aboutTitle {
+        font-size: 3rem;
+    }
+
+    .aboutGrid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,92 @@
+.header {
+    /* A standard height of 70px to keep things consistent */
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    /* Glassmorphism: This creates that cool blurry background effect you see on modern OSs */
+    background: rgba(26, 26, 26, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    /* A very subtle border to separate the header from the content */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.headerContainer {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerLogoSection {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.headerLogo {
+    height: 40px;
+    width: auto;
+    /* Subtle glow around the logo to make it pop against the dark bg */
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.2));
+}
+
+.headerTitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    margin: 0;
+}
+
+.headerNav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navLink {
+    font-size: 0.9rem;
+    font-weight: 500;
+    /* A soft grey for links so they don't distract from the main content */
+    color: #a0a0a0;
+    transition: color 0.2s ease;
+}
+
+.navLink:hover,
+.navLink.active {
+    /* Turns white on hover or when active to show it's clickable/selected */
+    color: #ffffff;
+}
+
+.navCta {
+    /* Our 'Get Started' button - we want this to stand out! */
+    padding: 0.6rem 1.2rem;
+    background-color: #ffffff;
+    color: #0a0a0a;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.navCta:hover {
+    transform: translateY(-1px);
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+
+    /* We hide the nav links on smaller screens to keep it clean */
+    .headerNav {
+        display: none;
+    }
+}

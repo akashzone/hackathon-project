@@ -1,0 +1,21 @@
+.appWrapper {
+  /* Making room for the fixed header at the top */
+  padding-top: 70px;
+  width: 100%;
+}
+
+.mainContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem 4rem 2rem;
+}
+
+.editorActive {
+  padding-top: 0;
+}
+
+.editorMain {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
